@@ -3,7 +3,7 @@ import React from 'react';
 function Data() {
     return (
         <div>
-        <h1>Lista de lembretes</h1>
+        <h2>Lista de lembretes</h2>
       </div>
     )
 }
