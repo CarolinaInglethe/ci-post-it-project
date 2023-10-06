@@ -5,6 +5,7 @@ function Data() {
     "exemplo1": ["nome lembrete ", "data"],
     "exemplo2": ["nome lembrete 2", "data"]
   }
+  const lembretes = Object.keys(data);
 
     return (
         <div>
