@@ -2,7 +2,7 @@ import React from 'react'
 
 function Form() {
     return (
-        <div>
+      <div id='form-component'>
         <h2>Criar novo Lembrete</h2>
         <label htmlFor="nomeform">Nome</label>
         <input type="text" id="nomeform" placeholder='nome do lembrete'/>
