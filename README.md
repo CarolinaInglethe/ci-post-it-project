@@ -43,5 +43,5 @@ No caso eu criei como root@localhost e a senha Carol987654321* (pois necessitou 
 
 ## Iniciando o Projeto :
 - Na pasta client-post-it : <strong>npm run dev</strong> ;
-- Na pasta api-post-it : <storng>yarn start</strong>;
+- Na pasta api-post-it : <strong>yarn start</strong>;
 - Na pasta Raiz rode : <strong>npm run project</srong> ( quando projeto tiver concluido );
