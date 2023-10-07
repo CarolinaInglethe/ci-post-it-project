@@ -1,21 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function Data() {
-  const data = {
-    "exemplo1": ["nome lembrete 1 ", "data"],
-    "exemplo2": ["nome lembrete 2", "data"]
+  const [ lembretes ,setLembretes ] = useState([]);
+
+  const getLembretes = async () => {
+    try {
+      const res = await axios.get("http://localhost:8800");
+      setLembretes(res.data)
+    } catch (error) {
+      return error
+    }
   }
-  const lembretes = Object.keys(data);
+
+  useEffect(() => {
+    getLembretes();
+  }, [setLembretes])
 
     return (
         <div>
         <h2>Lista de lembretes</h2>
+        <div id="lista-lembretes">
         {
-          !data ? <p>Carregando..</p> : lembretes.map((key,index) => (
-          <div key={index}> 
-            <p>{data[key]}</p>
+          !lembretes ? <p>Carregando..</p> : lembretes.map((value,index) => (
+          <div id={index}> 
+            <p>{value.id}</p>
+            <p>{value.texto}</p>
+            <p>{value.data}</p>
           </div>))
         }
+        </div>
+
       </div>
     )
 }

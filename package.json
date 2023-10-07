@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "npm run dev --prefix client-post-it"
+    "client": "npm run dev --prefix client-post-it",
+    "server": "npm run start --prefix api-post-it"
   },
   "repository": {
     "type": "git",
