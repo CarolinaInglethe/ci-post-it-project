@@ -10,3 +10,5 @@ Ao clonar o repositorio dê um npm install e  entre na pasta client-post-it (fro
 
 Até o momento só foi criado o front,  para rodar ele você pode estar tanto dentro da pasta raiz do projeto e rodar o <strong>npm run client </strong>.
 Quanto pode também entrar na pasta client-pos-it e rodar o npm run dev.
+
+mudanças
