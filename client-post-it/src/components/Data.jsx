@@ -22,11 +22,12 @@ function Data() {
         <h2>Lista de lembretes</h2>
         <div id="lista-lembretes">
         {
-          !lembretes ? <p>Carregando..</p> : lembretes.map((value,index) => (
+          !lembretes ? <p>Carregando...</p> : lembretes.map((value,index) => (
           <div id={index}> 
             <p>{value.id}</p>
             <p>{value.texto}</p>
             <p>{value.data}</p>
+            <img src="../../public/lixeira.png" alt="icone de lixeira" id="icone-lixeira"/>
           </div>))
         }
         </div>

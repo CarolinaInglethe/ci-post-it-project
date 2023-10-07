@@ -19,4 +19,8 @@
         justify-content: space-around;
         flex-direction: row;
     }
+    #icone-lixeira {
+        width: 3.5%;
+        height: 2%;
+    }
 }
