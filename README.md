@@ -4,27 +4,27 @@
 
 Em progresso..
 
-### O projeto é fullstack :heart_on_fire: .
+### :heart_on_fire: O projeto é fullstack  .
  - A  api e o fornt-end se encontra juntos dentro do projeto separados por 2 pastas : <strong> api-post-it </storng> e <strong>client-post-it </storng> ;
  - O front-end é com React.js .
  - O back-end é com Node.js e express.
 
 ##
 
-### Instalações necessárias para rodar localmente :
+###  :gear: Instalações necessárias para rodar localmente :
  -  npm , git e node.js v18.12.1.
  - Para o banco local <strong> mysql-server e também Mysql-Workbanch </strong>.
  - As bibliotecas usadas foram react+vite no front end, e no back end instalado as bibliotecas express, nodemon, cors yarn.
 
 ##
 
-### Ação Necessária antes de rodar o projeto :
+###  :gear: Ação Necessária antes de rodar o projeto :
  - Dar npm install na pasta raiz;
  - <strong> npm install na pasta client-post-it </strong> e <strong> npm install dentro da pasta api-post-it </strong> para installar as bibliotecas do projeto.
 
 ##
 
-### <strong> Configuração de conexao com Banco Mysql </strong>:
+###  :gear: <strong> Configuração de conexao com Banco Mysql </strong>:
   - Mysql instalado pelo linux ubuntu 20.04 + Mysql workbanch 8.
 ( No meu caso segui passo a passo de instalação: https://www.youtube.com/watch?v=CnRRCTMvs8Q&t=599s&ab_channel=hcode pois estou usando o subsistema linux com WSL no Windows )
  - 1°  <storng>sudo apt update</strong>
@@ -49,7 +49,7 @@ No caso eu criei como root@localhost e a senha Carol987654321* (pois necessitou 
 
 ##
 
-## Iniciando o Projeto :
+## :heavy_check_mark: Iniciando o Projeto :
  #### Dentro da pasta Raiz do projeto rode estes comandos
 - Comando para rodar o projeto (api e front-end juntos ) : <strong>npm run project</strong> ;
 - Comando para rodar somente api (back-end) : <strong>yarn start</strong>;
