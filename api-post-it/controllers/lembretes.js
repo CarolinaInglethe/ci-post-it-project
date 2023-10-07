@@ -25,7 +25,7 @@ export const addLembrete = (req,res) => {
     })
 };
 
-export const deleteLembrete = () => {
+export const deleteLembrete = (req,res) => {
     const q = "DELETE FROM lembretes WHERE `id` = ?"; 
 
     db.query(q, [req.params.id], (err) => {

@@ -9,7 +9,7 @@ function Form() {
     if (event.target.name === "data") setData(event.target.value);
   }
 
-  const addItem =  (event) => {
+  const handleAddItem =  (event) => {
     if( texto.length < 3 || data === "") return alert("Preencha todos os campos")
 
     addLembretes()
@@ -29,7 +29,7 @@ function Form() {
           <input type="date" name="data" id="dateform" onChange={handleChange} value={data} placeholder='Data do lembrete (ss/mm/yyyy)'/>
           </>
           
-          <button type="button" onClick={addItem}>Criar</button>
+          <button type="button" onClick={handleAddItem}>Criar</button>
         </div>
         
       </form>

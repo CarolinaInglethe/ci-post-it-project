@@ -18,7 +18,7 @@ function InfoProvider({ children }) {
     }
   }
 
-  const addLembretes = async () => {
+  const addLembretes = async (id) => {
     await axios.post("http://localhost:8800", {
       texto: texto,
       data: data
@@ -33,6 +33,14 @@ function InfoProvider({ children }) {
     getLembretes()
   }
 
+  const deleteLembretes = async (id) => {
+    await axios.delete("http://localhost:8800/" + id )
+    .then(({data}) => console.log(data))
+    .catch(({data}) => console.log(data))
+
+    getLembretes()
+  }
+
 
   const contextValues = {
     getLembretes,
@@ -42,7 +50,8 @@ function InfoProvider({ children }) {
     texto,
     setTexto,
     data,
-    setData
+    setData,
+    deleteLembretes
   };
 
   return (
