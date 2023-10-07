@@ -10,15 +10,15 @@ export const getAll = (_, res) => {
     })
 };
 
-export const addLembrete = () => {
-    const q = "INSERT INTO lembretes('texto', 'data') VALUES (?)";
+export const addLembrete = (req,res) => {
+    const q = "INSERT INTO lembretes(`texto`, `data`) VALUES (?)";
 
     const values = [
       req.body.texto,
       req.body.data 
     ];
 
-    db.queri(q, [values] , (err) => {
+    db.query(q, [values] , (err) => {
         if (err) return res.json(err);
 
         return res.status(200).json("Lembrete criado com sucesso !");

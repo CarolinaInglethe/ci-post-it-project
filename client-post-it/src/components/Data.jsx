@@ -23,7 +23,7 @@ function Data() {
         <div id="lista-lembretes">
         {
           !lembretes ? <p>Carregando...</p> : lembretes.map((value,index) => (
-          <div id={index}> 
+          <div key={index}> 
             <p>{value.id}</p>
             <p>{value.texto}</p>
             <p>{value.data}</p>
