@@ -42,7 +42,8 @@ No caso eu criei como root@localhost e a senha Carol987654321* (pois necessitou 
  - 6° ou em vez de fazer o 5° passo pode  installar o Mysql Workbench (  ter uma vizualização do banco e criar o banco e a tabela que a API espera no arquivo db.js que no caso é 'dblembretes' e uma tabela 'lembretes' pelo Workbanch ). 
 
 ## Iniciando o Projeto :
-- Na pasta client-post-it : <strong>npm run dev</strong> ;
-- Na pasta api-post-it : <strong>yarn start</strong>;
-- Na pasta Raiz rode : <strong>npm run project</srong> ( quando projeto tiver concluido );
+ #### Dentro da pasta Raiz do projeto rode estes comandos
+- Comando para rodar o projeto (api e front-end juntos ) : <strong>npm run project</strong> ;
+- Comando para rodar somente api (back-end) : <strong>yarn start</strong>;
+- Comando para rodar somente front-end : <strong> npm run client </strong>.
 
