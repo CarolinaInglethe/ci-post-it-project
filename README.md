@@ -24,7 +24,7 @@ Em progresso..
 
 ##
 
-###  :gear: <strong> Configuração de conexao com Banco Mysql </strong>:
+###  :gear: :dolphin: :flipper: <strong> Configuração de conexao com Banco Mysql </strong>:
   - Mysql instalado pelo linux ubuntu 20.04 + Mysql workbanch 8.
 ( No meu caso segui passo a passo de instalação: https://www.youtube.com/watch?v=CnRRCTMvs8Q&t=599s&ab_channel=hcode pois estou usando o subsistema linux com WSL no Windows )
  - 1°  <storng>sudo apt update</strong>
