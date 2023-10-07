@@ -1,17 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useContext, useEffect } from 'react';
+import InfoContext from '../context/infoContext';
 
 function Data() {
-  const [ lembretes ,setLembretes ] = useState([]);
-
-  const getLembretes = async () => {
-    try {
-      const res = await axios.get("http://localhost:8800");
-      setLembretes(res.data)
-    } catch (error) {
-      return error
-    }
-  }
+  const { getLembretes, lembretes, setLembretes } = useContext(InfoContext);
 
   useEffect(() => {
     getLembretes();

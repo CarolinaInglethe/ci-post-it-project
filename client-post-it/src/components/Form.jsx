@@ -1,9 +1,8 @@
-import React, { useState, toast } from 'react'
-import axios from 'axios';
+import React, { useContext } from 'react'
+import InfoContext from '../context/infoContext';
 
 function Form() {
-  const [texto, setTexto] = useState("");
-  const [ data, setData] = useState("");
+  const {addLembretes, texto, setTexto, data, setData, getLembretes } = useContext(InfoContext)
 
   const handleChange = (event) => {
     if (event.target.name === "texto") setTexto(event.target.value);
@@ -13,15 +12,7 @@ function Form() {
   const addItem =  (event) => {
     if( texto.length < 3 || data === "") return alert("Preencha todos os campos")
 
-     axios.post("http://localhost:8800", {
-      texto: texto,
-      data: data
-    })
-    .then(({data}) => console.log(data))
-    .catch(({data}) => console.log(data))
-
-    setTexto("");
-    setData("");
+    addLembretes()
   }
 
     return (
@@ -30,12 +21,12 @@ function Form() {
         <div>
           <>
           <label htmlFor="nomeform">Nome</label>
-          <input type="text" name="texto" id="nomeform"  onChange={handleChange} placeholder='nome do lembrete'/>
+          <input type="text" name="texto" id="nomeform"  onChange={handleChange} value={texto} placeholder='nome do lembrete'/>
           </>
 
           <>
           <label htmlFor="dateform">Data</label>
-          <input type="date" name="data" id="dateform" onChange={handleChange} placeholder='Data do lembrete (ss/mm/yyyy)'/>
+          <input type="date" name="data" id="dateform" onChange={handleChange} value={data} placeholder='Data do lembrete (ss/mm/yyyy)'/>
           </>
           
           <button type="button" onClick={addItem}>Criar</button>
