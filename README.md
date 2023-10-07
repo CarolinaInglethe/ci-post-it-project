@@ -9,14 +9,20 @@ Em progresso..
  - O front-end é com React.js .
  - O back-end é com Node.js e express.
 
+##
+
 ### Instalações necessárias para rodar localmente :
  -  npm , git e node.js v18.12.1.
  - Para o banco local <strong> mysql-server e também Mysql-Workbanch </strong>.
  - As bibliotecas usadas foram react+vite no front end, e no back end instalado as bibliotecas express, nodemon, cors yarn.
 
+##
+
 ### Ação Necessária antes de rodar o projeto :
  - Dar npm install na pasta raiz;
  - <strong> npm install na pasta client-post-it </strong> e <strong> npm install dentro da pasta api-post-it </strong> para installar as bibliotecas do projeto.
+
+##
 
 ### <strong> Configuração de conexao com Banco Mysql </strong>:
   - Mysql instalado pelo linux ubuntu 20.04 + Mysql workbanch 8.
@@ -40,6 +46,8 @@ No caso eu criei como root@localhost e a senha Carol987654321* (pois necessitou 
      PRIMARY KEY (id));
     
  - 6° ou em vez de fazer o 5° passo pode  installar o Mysql Workbench (  ter uma vizualização do banco e criar o banco e a tabela que a API espera no arquivo db.js que no caso é 'dblembretes' e uma tabela 'lembretes' pelo Workbanch ). 
+
+##
 
 ## Iniciando o Projeto :
  #### Dentro da pasta Raiz do projeto rode estes comandos
