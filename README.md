@@ -1,6 +1,6 @@
 # ci-post-it-project
 
-## Teste prático processo seletivo DTI
+## Projeto Sistema Web de lembretes - DTI
 
 Em progresso..
 
