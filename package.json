@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client": "npm run dev --prefix client-post-it"
+    "client": "npm run dev --prefix client-post-it",
+    "server": "npm run start --prefix api-post-it",
+    "project": "concurrently 'npm run server' 'npm run client'"
   },
   "repository": {
     "type": "git",
@@ -18,6 +20,7 @@
   },
   "homepage": "https://github.com/CarolinaInglethe/ci-post-it-project#readme",
   "dependencies": {
+    "concurrently": "^8.2.1",
     "mysql2": "^3.6.1"
   }
 }
