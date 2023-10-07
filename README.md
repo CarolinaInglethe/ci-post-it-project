@@ -4,7 +4,7 @@
 
 Em progresso..
 
-### O projeto é fullstack.
+### O projeto é fullstack :heart_on_fire: .
  - A  api e o fornt-end se encontra juntos dentro do projeto separados por 2 pastas : api-post-it e client-post-it ;
  - O front end é com React.js .
  - O backend é com Node.js e express.
