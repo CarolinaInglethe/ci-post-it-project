@@ -50,7 +50,7 @@ No caso eu criei como root@localhost e a senha Carol987654321* (pois necessitou 
 ##
 
 ## :heavy_check_mark: Iniciando o Projeto :
- #### Dentro da pasta Raiz do projeto rode estes comandos
+ #### Dentro da pasta Raiz do projeto rode 
 - :green_circle: Comando para rodar o projeto Frontend+Backend  (Recomendado) : <strong>npm run project</strong> ;
 - :black_circle: Comando para rodar somente api (back-end) : <strong>yarn start</strong>;
 - :black_circle: Comando para rodar somente front-end : <strong> npm run client </strong>.
