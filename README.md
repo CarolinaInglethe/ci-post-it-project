@@ -18,7 +18,7 @@ Em progresso..
  - Dar npm install na pasta raiz;
  - <strong> npm install na pasta client-post-it </strong> e <strong> npm install dentro da pasta api-post-it </strong> para installar as bibliotecas do projeto.
 
-#### <strong> Configurção de conexao com Banco Mysql </strong>:
+### <strong> Configuração de conexao com Banco Mysql </strong>:
   - Mysql instalado pelo linux ubuntu 20.04 + Mysql workbanch 8.
 ( No meu caso segui passo a passo de instalação: https://www.youtube.com/watch?v=CnRRCTMvs8Q&t=599s&ab_channel=hcode pois estou usando o subsistema linux com WSL no Windows )
  - 1° sudo apt update
