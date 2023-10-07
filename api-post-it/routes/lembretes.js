@@ -1,5 +1,5 @@
 import express  from "express";
-import { getAll } from "../controllers/lembretes"
+import { getAll } from "../controllers/lembretes.js"
 
 const router = express.Router();
 

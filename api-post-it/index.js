@@ -9,4 +9,6 @@ app.use(cors()); // evitar conflitos para rodar localmente.
 
 app.use('/', Routes);
 
-app.listen(8800);
+const PORT = 8800;
+
+app.listen(8800, ( ) => { console.log(`Funcionando na porta ${PORT}`)} );

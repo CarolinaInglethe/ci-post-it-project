@@ -1,6 +1,6 @@
 import { db } from "../db.js";
 
-export const getAll = async (_, res) => {
+export const getAll = (_, res) => {
     const queryMysql = "SELECT * FROM lembretes";
 
     db.query( queryMysql, (err, data) => {
@@ -8,4 +8,4 @@ export const getAll = async (_, res) => {
 
         return res.status(200).json(data);
     })
-}
+};
