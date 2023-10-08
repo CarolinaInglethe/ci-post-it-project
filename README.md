@@ -13,6 +13,15 @@
 
 ##
 
+
+## :heavy_check_mark: Iniciando o Projeto :
+ #### Dentro da pasta Raiz do projeto rode 
+- :green_circle: Comando para rodar o projeto Frontend+Backend  (Recomendado) : <strong>npm run project</strong> ;
+- :black_circle: Comando para rodar somente api (back-end) : <strong>yarn start</strong>;
+- :black_circle: Comando para rodar somente front-end : <strong> npm run client </strong>.
+
+##
+
 ###  :gear: Instalações necessárias para rodar localmente :
  -  npm , git e node.js v18.12.1.
  - Para o banco local <strong> mysql-server e também Mysql-Workbanch </strong>.
@@ -48,12 +57,3 @@ No caso eu criei como root@localhost e a senha Carol987654321* (pois necessitou 
      PRIMARY KEY (id));
     
  - 6° ou em vez de fazer o 5° passo pode  installar o Mysql Workbench (  ter uma vizualização do banco e criar o banco e a tabela que a API espera no arquivo db.js que no caso é 'dblembretes' e uma tabela 'lembretes' pelo Workbanch ). 
-
-##
-
-## :heavy_check_mark: Iniciando o Projeto :
- #### Dentro da pasta Raiz do projeto rode 
-- :green_circle: Comando para rodar o projeto Frontend+Backend  (Recomendado) : <strong>npm run project</strong> ;
-- :black_circle: Comando para rodar somente api (back-end) : <strong>yarn start</strong>;
-- :black_circle: Comando para rodar somente front-end : <strong> npm run client </strong>.
-
