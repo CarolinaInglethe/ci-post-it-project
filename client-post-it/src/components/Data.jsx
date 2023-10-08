@@ -1,37 +1,46 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useContext, useEffect } from 'react';
+import InfoContext from '../context/infoContext';
 
 function Data() {
-  const [ lembretes ,setLembretes ] = useState([]);
-
-  const getLembretes = async () => {
-    try {
-      const res = await axios.get("http://localhost:8800");
-      setLembretes(res.data)
-    } catch (error) {
-      return error
-    }
-  }
+  const { getLembretes, lembretes, setLembretes, deleteLembretes, lembretesPorData } = useContext(InfoContext);
+  const datasKey = Object.keys(lembretesPorData);
 
   useEffect(() => {
     getLembretes();
   }, [setLembretes])
 
+  const handleDeleteItem = async (event) => {
+    await deleteLembretes(event.target.name);
+  }
+
     return (
-        <div>
+        <section id="lista-lembretes">
         <h2>Lista de lembretes</h2>
-        <div id="lista-lembretes">
+        <div>
         {
-          !lembretes ? <p>Carregando..</p> : lembretes.map((value,index) => (
-          <div id={index}> 
-            <p>{value.id}</p>
-            <p>{value.texto}</p>
-            <p>{value.data}</p>
+          !lembretesPorData ? <p>Carregando...</p> : datasKey.map((value,index) => (
+          <div key={index}> 
+              <h3> <img src="../../public/encontro.png" alt="icone calendario" />{value}</h3>
+              {
+                !lembretesPorData[value] ? <p>carregando ...</p> : lembretesPorData[value].map((value2,index2) => (
+                <div key={index2} id="item-lembrete">
+                  <p>{value2.texto}</p>
+                  <img 
+                     src="../../public/lixeira-de-reciclagem.png" 
+                     alt="icone de lixeira" 
+                     id="icone-lixeira"
+                     name={value2.id}
+                     onClick={handleDeleteItem}
+                  />
+                </div>
+                ))
+              }
+            
           </div>))
         }
         </div>
 
-      </div>
+      </section>
     )
 }
 
