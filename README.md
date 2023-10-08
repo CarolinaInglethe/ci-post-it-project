@@ -2,12 +2,14 @@
 
 ## Projeto Sistema Web de lembretes - DTI
 
-Em progresso..
 
 ### :heart_on_fire: O projeto é fullstack  .
  - A  api e o fornt-end se encontra juntos dentro do projeto separados por 2 pastas : <strong> api-post-it </storng> e <strong>client-post-it </storng> ;
  - O front-end é com React.js + vite .
  - O back-end é com Node.js e express.
+
+![image](https://github.com/CarolinaInglethe/ci-post-it-project/assets/83843286/5be31510-3a2c-4f82-99ab-e94db7988a25)
+
 
 ##
 
