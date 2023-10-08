@@ -3,7 +3,7 @@ import InfoContext from '../context/infoContext';
 
 function Data() {
   const { getLembretes, lembretes, setLembretes, deleteLembretes, lembretesPorData } = useContext(InfoContext);
-  const datasKey = Object.keys(lembretesPorData);
+  const datasKey = Object.keys(lembretesPorData).sort();
 
   useEffect(() => {
     getLembretes();
