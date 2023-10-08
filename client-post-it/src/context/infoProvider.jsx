@@ -9,7 +9,6 @@ function InfoProvider({ children }) {
   const [ data, setData] = useState("");
 
   const lembretesPorData = Object.groupBy(lembretes, ({data}) => data); // agrupando resultado de lembretes por data
-  console.log(lembretesPorData)
 
 
   const getLembretes = async () => {

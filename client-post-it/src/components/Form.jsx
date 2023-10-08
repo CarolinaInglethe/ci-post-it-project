@@ -12,6 +12,11 @@ function Form() {
   const handleAddItem =  (event) => {
     if( texto.length < 3 || data === "") return alert("Preencha todos os campos")
 
+    var dataConverte = new Date(data.split('/').reverse().join('/'));
+    var dataAtual = new Date();
+
+    if(dataConverte < dataAtual) return alert("Essa data já passou!");
+
     addLembretes()
   }
 
