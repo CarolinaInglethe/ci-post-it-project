@@ -8,7 +8,8 @@
  - O front-end é com React.js + vite .
  - O back-end é com Node.js e express.
 
-![image](https://github.com/CarolinaInglethe/ci-post-it-project/assets/83843286/5be31510-3a2c-4f82-99ab-e94db7988a25)
+![image](https://github.com/CarolinaInglethe/ci-post-it-project/assets/83843286/0faa9c6e-b069-4df8-b161-74fed954e78b)
+
 
 
 ##
