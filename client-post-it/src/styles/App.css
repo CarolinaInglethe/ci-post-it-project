@@ -9,21 +9,142 @@
         justify-content: space-around;
         align-items: center;
     }
+
     #form-component  {
-        border: 1px solid black;
+        border: 1px solid rgba(98, 223, 202, 0.233);
+        border-radius: 5px;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
-        width: 55%;
+        width: 90%;
+        margin: 1%;
+        padding: 1%;
     }
+
+    #form-component > div {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+
+    label , input {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    button {
+       width: 12%;
+    }
+    
     #lista-lembretes {
+        padding: 2%;
+        width: 50%;
+    }
+
+    #lista-lembretes > h2 {
+        background-color: rgba(46, 245, 235, 0.11);
+        text-align: center;
+    }
+
+    #item-lembrete {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.185);
+        border-radius: 5px;
+        margin: 5px;
     }
+    #item-lembrete > p {
+        width: 75%;
+    }
+
+    img {
+        width: 2.5%;
+        margin: 2px;
+        
+    }
+
     #icone-lixeira {
         width: 3.5%;
         height: 2%;
     }
+    #icone-lixeira:hover {
+        width: 3%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+    #App{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: medium;
+    }
+
+    #form-component  {
+        border: 1px solid rgba(98, 223, 202, 0.233);
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #form-component > div {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    label , input {
+        margin: 12px;
+        padding: 5px;
+    }
+
+    button {
+        padding: 4px;
+    }
+    
+    #lista-lembretes {
+        padding: 1%;
+    }
+
+    #lista-lembretes > h2 {
+        background-color: rgba(46, 245, 235, 0.11);
+        text-align: center;
+    }
+
+    #item-lembrete {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        border: 1px solid rgba(0, 0, 0, 0.185);
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #item-lembrete > p {
+        width: 1;
+    }
+
+    img {
+        width: 2.5%;
+        margin: 2px;
+        
+    }
+
+    #icone-lixeira {
+        width: 3.5%;
+        height: 2%;
+    }
+    #icone-lixeira:hover {
+        width: 3%;
+    }
+
 }

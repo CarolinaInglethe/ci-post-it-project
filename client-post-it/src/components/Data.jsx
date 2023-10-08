@@ -14,19 +14,19 @@ function Data() {
   }
 
     return (
-        <section>
+        <section id="lista-lembretes">
         <h2>Lista de lembretes</h2>
         <div>
         {
           !lembretesPorData ? <p>Carregando...</p> : datasKey.map((value,index) => (
           <div key={index}> 
-              <h3>{value}</h3>
+              <h3> <img src="../../public/encontro.png" alt="icone calendario" />{value}</h3>
               {
                 !lembretesPorData[value] ? <p>carregando ...</p> : lembretesPorData[value].map((value2,index2) => (
-                <div key={index2} id="lista-lembretes">
+                <div key={index2} id="item-lembrete">
                   <p>{value2.texto}</p>
                   <img 
-                     src="../../public/lixeira.png" 
+                     src="../../public/lixeira-de-reciclagem.png" 
                      alt="icone de lixeira" 
                      id="icone-lixeira"
                      name={value2.id}
