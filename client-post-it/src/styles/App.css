@@ -9,12 +9,15 @@
         justify-content: space-around;
         align-items: center;
     }
-    #form-component > div {
+    #form-component  {
+        border: 1px solid black;
         display: flex;
         justify-content: space-around;
-        color: red;
+        flex-direction: column;
+        align-items: center;
+        width: 55%;
     }
-    #lista-lembretes > div {
+    #lista-lembretes {
         display: flex;
         justify-content: space-around;
         flex-direction: row;
