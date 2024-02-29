@@ -1,6 +1,6 @@
 # ci-post-it-project
 
-## Projeto Sistema Web de lembretes - DTI
+## Projeto Sistema Web de lembretes
 
 
 ### :heart_on_fire: O projeto é fullstack  .
